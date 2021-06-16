@@ -12,7 +12,7 @@ export const Navbar: React.FC<Prop> = ({highlight = ''}) => {
     // TODO: hamburger
 
     return (
-        <div style={{position: "absolute", width: "100%"}}>
+        <div style={{width: "100%"}}>
         <nav className="navbar">
             <HashLink to="/"><img src={logo} className="navIcon" />Andrew's Portfolio</HashLink>
             <div className="navItems">
@@ -21,6 +21,8 @@ export const Navbar: React.FC<Prop> = ({highlight = ''}) => {
                 <HashLink to="/#contact" className={highlight === 'contact' ? "highlightedNav": ""}>Contact</HashLink>
                 <HashLink to="/resume" className={highlight === 'resume' ? "highlightedNav": ""}>Resume</HashLink>
                 <a target="_blank" href="https://andrew-li-blog.vercel.app/">Blog</a>
+            </div>
+            <div className="hamburger">
             </div>
         </nav>
         </div>

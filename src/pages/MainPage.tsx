@@ -27,7 +27,7 @@ export const MainPage: React.FC = () => {
             <Projects />
             <Skills />
             <Contact />
-            <Footer />
+            <Footer  highlight={currentItem} />
         </>
     )
 }

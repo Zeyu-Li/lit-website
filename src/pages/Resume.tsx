@@ -12,7 +12,7 @@ export const Resume: React.FC = () => {
     return (
         <>
             <Navbar highlight="resume" />
-            <Footer />
+            <Footer highlight="resume" />
         </>
     )
 }
