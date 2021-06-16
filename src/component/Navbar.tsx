@@ -12,7 +12,7 @@ export const Navbar: React.FC<Prop> = ({highlight = ''}) => {
     // TODO: hamburger
 
     return (
-        <div style={{width: "100%"}}>
+        <div>
         <nav className="navbar">
             <HashLink to="/"><img src={logo} className="navIcon" />Andrew's Portfolio</HashLink>
             <div className="navItems">

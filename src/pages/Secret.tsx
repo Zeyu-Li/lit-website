@@ -15,10 +15,10 @@ export const Secret: React.FC = () => {
     return (
         <>
             <Navbar />
-            <PenguinCoin />
+            <PenguinCoin className="pageIcons" />
             <h1>Secret???</h1>
             <p>Good job, you get a Penguin Bottom Coin</p>
-            <AiFillHome color="blue" /> <Link to="/"><a>Take me home</a></Link>
+            <AiFillHome color="blue" /> <Link to="/">Take me home</Link>
         </>
     )
 }
