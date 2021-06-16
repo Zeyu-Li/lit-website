@@ -39,7 +39,7 @@ export const Resume: React.FC = () => {
             <div className="block">
                 <div className="resumeBody">
                     <h1>Resume</h1>
-                    <p><a href="resume.pdf" target="_blank">Direct link</a> to my resume or preview below</p>
+                    <p><a title="Download resume" href="resume.pdf" target="_blank">Direct link</a> to my resume or preview below</p>
                     <Document file={"resume.pdf"}>
                         <div style={{height: PDFWidth * (11/8.5)}}>
                             <Page onLoadSuccess={removeTextLayerOffset} pageNumber={1} width={PDFWidth} />

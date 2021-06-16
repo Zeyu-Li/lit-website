@@ -11,19 +11,15 @@ export const PageNotFound: React.FC = () => {
         document.title = "Andrew's Portfolio | 404"
     }, [])
 
-    const troll = () => {
-        // we do a little trolling :p
-    }
-
     return (
         <div className="block singles">
             <Navbar />
             <div className="singleBody">
-                <PiratePenguin className="pageIcons" onClick={troll} />
+                    <PiratePenguin className="pageIcons" />
                 <div className="pageText">
                     <h1>Error 404</h1>
                     <p>This page must’ve been <wbr />stolen by a pirate :{'('}</p>
-                    <Link to="/"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={54} /></span>
+                    <Link to="/" title="Go Home"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={54} /></span>
                     Take me home</Link>
                 </div>
             </div>

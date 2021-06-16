@@ -10,17 +10,22 @@ export const Secret: React.FC = () => {
     // sets title
     useEffect(() => {
         document.title = "Andrew's Portfolio | 😳"
-    }, []);
+    }, [])
+
+    const troll = () => {
+        // we do a little trolling :p
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank")
+    }
 
     return (
         <div className="block singles">
             <Navbar />
             <div className="singleBody singleBodyCoin">
-                <PenguinCoin className="pageIcons" />
+                <PenguinCoin className="pageIcons" title="Free PBC???" onClick={troll} style={{cursor: "pointer"}} />
                 <div className="pageText">
                     <h1>Secret???</h1>
                     <p className="singleText">Good job, you got a <wbr />Penguin Bottom Coin</p>
-                    <Link to="/"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={70}  /></span>
+                    <Link to="/" title="Go Home"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={70}  /></span>
                     Take me home</Link>
                 </div>
             </div>

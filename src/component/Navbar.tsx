@@ -14,13 +14,13 @@ export const Navbar: React.FC<Prop> = ({highlight = ''}) => {
     return (
         <div>
         <nav className="navbar">
-            <HashLink to="/"><img src={logo} className="navIcon" />Andrew's Portfolio</HashLink>
+            <HashLink to="/" title="Home"><img src={logo} className="navIcon" />Andrew's Portfolio</HashLink>
             <div className="navItems">
-                <HashLink to="/" className={highlight === 'home' ? "highlightedNav": ""}>Home</HashLink>
-                <HashLink to="/#projects" className={highlight === 'projects' ? "highlightedNav": ""}>Projects</HashLink>
-                <HashLink to="/#contact" className={highlight === 'contact' ? "highlightedNav": ""}>Contact</HashLink>
-                <HashLink to="/resume" className={highlight === 'resume' ? "highlightedNav": ""}>Resume</HashLink>
-                <a target="_blank" href="https://andrew-li-blog.vercel.app/">Blog</a>
+                <HashLink title="Home" to="/" className={highlight === 'home' ? "highlightedNav": ""}>Home</HashLink>
+                <HashLink title="My Projects" to="/#projects" className={highlight === 'projects' ? "highlightedNav": ""}>Projects</HashLink>
+                <HashLink title="Contact Me" to="/#contact" className={highlight === 'contact' ? "highlightedNav": ""}>Contact</HashLink>
+                <HashLink title="View my resume" to="/resume" className={highlight === 'resume' ? "highlightedNav": ""}>Resume</HashLink>
+                <a title="View my blog" target="_blank" href="https://andrew-li-blog.vercel.app/">Blog</a>
             </div>
             <div className="hamburger">
             </div>
