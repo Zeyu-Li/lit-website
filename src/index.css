@@ -130,9 +130,9 @@ code {
 }
 /* resume */
 .resumeBody {
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-top: 18vh;
+  padding-left: 23vw;
+  padding-right: 23vw;
+  padding-top: 16vh;
 }
 .resumeBody h1 {
   font-size: 48px;
@@ -194,6 +194,14 @@ footer a, footer p {
   }
   .hamburger {
     display: auto;
+  }
+  .resumeBody {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 18vh;
+  }
+  .resumeBody p {
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 800px) {
