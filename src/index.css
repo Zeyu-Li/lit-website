@@ -52,6 +52,7 @@ code {
   padding-left: 10px;
   padding-right: 20px;
   overflow-x: hidden;
+  z-index: 100;
 }
 .navItems {
   float: right;
@@ -123,6 +124,12 @@ code {
 }
 .singleBody .homeIcon svg {
   vertical-align: sub;
+}
+/* resume */
+.resumeBody {
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 18vh;
 }
 /* end of other pages */
 
