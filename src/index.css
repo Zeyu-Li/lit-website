@@ -36,6 +36,9 @@ code {
 
 /* navbar */
 .navbar {
+  position: sticky;
+  /* top: 0;
+  width: 100vw; */
   background-color: #4F5D63;
   padding: 25px;
   padding-left: 10px;
@@ -65,3 +68,4 @@ code {
   padding-right: 20px;
   padding-bottom: 4px;
 }
+/* End of navbar */

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
 
 import { ReactComponent as PenguinCoin } from '../images/coin.svg'
+import { Navbar } from '../component/Component';
 
 
 export const Secret: React.FC = () => {
@@ -13,6 +14,7 @@ export const Secret: React.FC = () => {
 
     return (
         <>
+            <Navbar />
             <PenguinCoin />
             <h1>Secret???</h1>
             <p>Good job, you get a Penguin Bottom Coin</p>

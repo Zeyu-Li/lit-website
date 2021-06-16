@@ -14,7 +14,7 @@ export const MainPage: React.FC = () => {
     const [currentItem, setCurrentItem] = useState('home')
     useEffect(() => {
         let current = location.hash.substring(1)
-        console.log(current)
+        // console.log(current)
         setCurrentItem(current.length == 0 ? 'home' : current)
     }, [location])
 

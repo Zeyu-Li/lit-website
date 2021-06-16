@@ -5,13 +5,14 @@ import logo from './../images/logo.png'
 
 
 interface Prop {
-    highlight: string
+    highlight?: string
 }
 
-export const Navbar: React.FC<Prop> = ({highlight}) => {
+export const Navbar: React.FC<Prop> = ({highlight = ''}) => {
     // TODO: hamburger
 
     return (
+        <div style={{position: "absolute", width: "100%"}}>
         <nav className="navbar">
             <HashLink to="/"><img src={logo} className="navIcon" />Andrew's Portfolio</HashLink>
             <div className="navItems">
@@ -22,5 +23,6 @@ export const Navbar: React.FC<Prop> = ({highlight}) => {
                 <a target="_blank" href="https://andrew-li-blog.vercel.app/">Blog</a>
             </div>
         </nav>
+        </div>
     )
 }
