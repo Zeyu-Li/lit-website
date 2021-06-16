@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, p, a {
   color: #F9F9F9;
   font-family: 'Fira Code', monospace;
 }
+h1 {
+  font-weight: normal;
+}
 a {
   transition: .2s;
   -moz-transition: .2s;
@@ -136,6 +139,12 @@ code {
 }
 .resumeBody p {
   font-size: 40px;
+}
+.resumeBody a {
+  color: #2EA2F8;
+}
+.resumeBody a:hover {
+  color: #73CDF3;
 }
 .annotationLayer {
   pointer-events: auto!important;
