@@ -1,4 +1,5 @@
 import React, {useState, useEffect } from 'react'
+import { Navbar, Footer } from '../component/Component';
 
 
 export const MainPage: React.FC = () => {
@@ -9,6 +10,8 @@ export const MainPage: React.FC = () => {
 
     return (
         <>
+            <Navbar />
+            <Footer />
         </>
     )
 }
