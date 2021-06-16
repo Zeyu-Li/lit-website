@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* text */
@@ -36,7 +37,12 @@ code {
 /* navbar */
 .navbar {
   background-color: #4F5D63;
-  padding: 20px;
+  padding: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navItems {
+  float: right;
 }
 .navbar a {
   color: #73CDF3;
@@ -54,5 +60,8 @@ code {
   color: #2EA2F8!important;
 }
 .navIcon {
-  height: 30px;
+  vertical-align: text-bottom;
+  height: 36px;
+  padding-right: 20px;
+  padding-bottom: 4px;
 }
