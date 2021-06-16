@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Navbar } from '../component/Component';
 
 
 
@@ -10,7 +11,7 @@ export const Resume: React.FC = () => {
 
     return (
         <>
-
+            <Navbar />
         </>
     )
 }
