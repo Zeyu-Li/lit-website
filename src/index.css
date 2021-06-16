@@ -100,10 +100,15 @@ code {
   height: 55vh;
 }
 .singleBody {
+  display: inline-grid;
+  grid-template-columns: 22vw 50vw;
   padding-left: 15vw;
   padding-right: 13vw;
   padding-top: 28vh;
   padding-bottom: 18vh;
+}
+.singleBodyCoin {
+  grid-template-columns: 26vw 50vw;
 }
 .singleBody > svg  {
   height: 46vh;
@@ -127,6 +132,14 @@ code {
 }
 .singleBody .homeIcon svg {
   vertical-align: sub;
+}
+/* Text body */
+.pageText h1  {
+  margin: 0;
+}
+.pageText p  {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* resume */
 .resumeBody {
@@ -181,7 +194,32 @@ footer a, footer p {
 }
 /* end of footer */
 /* when smaller screen */
+@media only screen and (max-width: 1270px) {
+  .singleBody {
+    grid-template-columns: 26vw 50vw;
+  }
+  .singleBodyCoin {
+    grid-template-columns: 30vw 50vw;
+  }
+  .singleBody h1 {
+    font-size: 60px;
+  }
+  .singleBody p {
+    font-size: 36px;
+  }
+  .singleBody a {
+    font-size: 36px;
+  }
+}
 @media only screen and (max-width: 1050px) {
+  .singleBody {
+    display: block;
+    text-align: center;
+    padding-top: 15vh;
+  }
+  .singleBody h1 {
+    margin-top: 10px;
+  }
   .navbar {
     background-color: #21282b;
   }
@@ -223,5 +261,20 @@ footer a, footer p {
 @media only screen and (max-width: 530px) {
   #footerBreak {
     display: block;
+  }
+  .pageIcons {
+    max-width: 70vw;
+  }
+  .pageText h1 {
+    font-size: 32px;
+  }
+  .pageText p {
+    font-size: 20px;
+  }
+  .pageText a {
+    font-size: 20px;
+  }
+  .homeIcon svg {
+    height: 30px;
   }
 }

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
 
@@ -15,12 +15,14 @@ export const Secret: React.FC = () => {
     return (
         <div className="block singles">
             <Navbar />
-            <div className="singleBody">
+            <div className="singleBody singleBodyCoin">
                 <PenguinCoin className="pageIcons" />
-                <h1>Secret???</h1>
-                <p className="singleText">Good job, you got a <wbr />Penguin Bottom Coin</p>
-                <Link to="/"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={70}  /></span>
-                Take me home</Link>
+                <div className="pageText">
+                    <h1>Secret???</h1>
+                    <p className="singleText">Good job, you got a <wbr />Penguin Bottom Coin</p>
+                    <Link to="/"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={70}  /></span>
+                    Take me home</Link>
+                </div>
             </div>
         </div>
     )

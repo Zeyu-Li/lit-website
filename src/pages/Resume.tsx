@@ -13,15 +13,9 @@ export const Resume: React.FC = () => {
     }, [])
 
     const [PDFWidth, setPDFWidth] = useState(window.innerWidth > 1050 ? window.innerWidth * 0.52 : window.innerWidth * 0.7)
-    const [isSmall, setIsSmall] = useState(false)
 
     useEffect(() => {
         const resizeListener = () => {
-            if (!(window.innerWidth > 1050)) {
-                setIsSmall(true)
-            } else {
-                setIsSmall(false)
-            }
             setPDFWidth(window.innerWidth > 1050 ? window.innerWidth * 0.52 : window.innerWidth * 0.7)
         }
         
