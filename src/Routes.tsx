@@ -1,7 +1,7 @@
-import React, {useState, } from 'react'
+import React from 'react'
 import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom'
 
-import {MainPage, Resume, PageNotFound, Secret, Blog} from './pages/pages'
+import {MainPage, Resume, PageNotFound, Secret} from './pages/pages'
 
 export const Routes: React.FC = () => {
 
