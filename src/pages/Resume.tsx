@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Navbar } from '../component/Component';
+import { Navbar, Footer } from '../component/Component';
 
 
 
@@ -11,7 +11,8 @@ export const Resume: React.FC = () => {
 
     return (
         <>
-            <Navbar />
+            <Navbar highlight="resume" />
+            <Footer />
         </>
     )
 }

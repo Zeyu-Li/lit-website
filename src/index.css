@@ -13,13 +13,46 @@ h1, h2, h3, h4, h5, p, a {
   color: #F9F9F9;
   font-family: 'Fira Code', monospace;
 }
+a {
+  transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+/* transition */
+.transition {
+  transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+}
+
 /* navbar */
+.navbar {
+  background-color: #4F5D63;
+  padding: 20px;
+}
 .navbar a {
-  padding: 10px;
+  color: #73CDF3;
+  font-size: 30px;
+  padding: 20px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #3e86a5;
+}
+.highlightedNav {
+  color: #D9EAF1!important;
+}
+.highlightedNav:hover {
+  color: #2EA2F8!important;
+}
+.navIcon {
+  height: 30px;
 }

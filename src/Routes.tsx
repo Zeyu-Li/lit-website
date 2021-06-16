@@ -6,14 +6,16 @@ import {MainPage, Resume, PageNotFound, Secret} from './pages/pages'
 export const Routes: React.FC = () => {
 
     return (
-        <BrowserRouter>
-            <Switch>
-                <Route exact path='/' component={MainPage} />
-                <Route path='/secret' component={Secret} />
-                <Route path='/resume' component={Resume} />
-                <Route path="/404" component={PageNotFound} />
-                <Redirect to="/404" />
-            </Switch>
-        </BrowserRouter>
+        <>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path='/' component={MainPage} />
+                    <Route path='/secret' component={Secret} />
+                    <Route path='/resume' component={Resume} />
+                    <Route path="/404" component={PageNotFound} />
+                    <Redirect to="/404" />
+                </Switch>
+            </BrowserRouter>
+        </>
     )
 }

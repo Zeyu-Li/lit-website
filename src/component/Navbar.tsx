@@ -4,16 +4,20 @@ import { HashLink } from 'react-router-hash-link'
 import logo from './../images/logo.png'
 
 
-export const Navbar: React.FC = () => {
+interface Prop {
+    highlight: string
+}
+
+export const Navbar: React.FC<Prop> = ({highlight}) => {
     // TODO: hamburger
 
     return (
         <nav className="navbar">
-            <HashLink to="/"><img src={logo} />Andrew's Portfolio</HashLink>
-            <HashLink to="/">Home</HashLink>
-            <HashLink to="/#projects">Projects</HashLink>
-            <HashLink to="/#contact">Contact</HashLink>
-            <HashLink to="/resume">Resume</HashLink>
+            <HashLink to="/"><img src={logo} className="navIcon" />Andrew's Portfolio</HashLink>
+            <HashLink to="/" className={highlight === 'home' ? "highlightedNav": ""}>Home</HashLink>
+            <HashLink to="/#projects" className={highlight === 'projects' ? "highlightedNav": ""}>Projects</HashLink>
+            <HashLink to="/#contact" className={highlight === 'contact' ? "highlightedNav": ""}>Contact</HashLink>
+            <HashLink to="/resume" className={highlight === 'resume' ? "highlightedNav": ""}>Resume</HashLink>
             <a target="_blank" href="https://andrew-li-blog.vercel.app/">Blog</a>
         </nav>
     )
