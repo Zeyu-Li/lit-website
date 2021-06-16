@@ -43,8 +43,9 @@ code {
 
 /* navbar */
 .navbar {
-  box-sizing: border-box;
   position: fixed;
+  box-sizing: border-box;
+  top: 0;
   width: 100%;
   background-color: #4F5D63;
   padding: 25px;
@@ -91,7 +92,38 @@ code {
 
 /* end of blocks */
 /* other pages */
-
+.pageIcons {
+  height: 55vh;
+}
+.singleBody {
+  padding-left: 15vw;
+  padding-right: 13vw;
+  padding-top: 28vh;
+  padding-bottom: 18vh;
+}
+.singleBody > svg  {
+  height: 46vh;
+}
+.singleBody h1 {
+  font-size: 80px;
+  color: #FF4141;
+}
+.singleBody p {
+  font-size: 48px;
+}
+.singleBody a {
+  color: #2EA2F8;
+  font-size: 48px;
+}
+.singleBody a:hover {
+  color: #73CDF3;
+}
+.singleBody .homeIcon {
+  padding-right: 30px;
+}
+.singleBody .homeIcon svg {
+  vertical-align: sub;
+}
 /* end of other pages */
 
 /* footer */

@@ -12,12 +12,15 @@ export const PageNotFound: React.FC = () => {
     }, []);
 
     return (
-        <div className="block">
+        <div className="block singles">
             <Navbar />
-            <PiratePenguin />
-            <h1>Error 404</h1>
-            <p>This page must’ve been stolen by a pirate :{'('}</p>
-            <AiFillHome color="blue" /> <Link to="/">Take me home</Link>
+            <div className="singleBody">
+                <PiratePenguin className="pageIcons" />
+                <h1>Error 404</h1>
+                <p>This page must’ve been <wbr />stolen by a pirate :{'('}</p>
+                <Link to="/"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={54} /></span>
+                Take me home</Link>
+            </div>
         </div>
     )
 }

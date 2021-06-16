@@ -13,12 +13,15 @@ export const Secret: React.FC = () => {
     }, []);
 
     return (
-        <>
+        <div className="block singles">
             <Navbar />
-            <PenguinCoin className="pageIcons" />
-            <h1>Secret???</h1>
-            <p>Good job, you get a Penguin Bottom Coin</p>
-            <AiFillHome color="blue" /> <Link to="/">Take me home</Link>
-        </>
+            <div className="singleBody">
+                <PenguinCoin className="pageIcons" />
+                <h1>Secret???</h1>
+                <p className="singleText">Good job, you got a <wbr />Penguin Bottom Coin</p>
+                <Link to="/"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={70}  /></span>
+                Take me home</Link>
+            </div>
+        </div>
     )
 }
