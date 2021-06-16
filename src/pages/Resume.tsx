@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
 
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import { Navbar, Footer } from '../component/Component'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
@@ -30,7 +31,7 @@ export const Resume: React.FC = () => {
 
     const removeTextLayerOffset = () => {
         const textLayers = document.querySelectorAll(".react-pdf__Page__textContent")
-            textLayers.forEach((layer: any) => {
+        textLayers.forEach((layer: any) => {
             const { style } = layer
             style.top = "0"
             style.left = "0"

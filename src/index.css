@@ -131,6 +131,15 @@ code {
   padding-right: 15vw;
   padding-top: 18vh;
 }
+.resumeBody h1 {
+  font-size: 48px;
+}
+.resumeBody p {
+  font-size: 40px;
+}
+.annotationLayer {
+  pointer-events: auto!important;
+}
 /* end of other pages */
 
 /* footer */
