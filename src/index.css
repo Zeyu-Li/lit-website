@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
@@ -15,7 +19,7 @@ h1, h2, h3, h4, h5, p, a {
   color: #F9F9F9;
   font-family: 'Fira Code', monospace;
 }
-h1 {
+h1, h2, h3 {
   font-weight: normal;
 }
 a {
@@ -127,6 +131,10 @@ code {
   min-height: 700px;
   height: 100vh;
 }
+.white {
+  background-color: #F9F9F9;
+}
+/* intro */
 .intro {
   display: inline-grid;
   grid-template-columns: 22vw 40vw;
@@ -147,12 +155,41 @@ code {
   width: 90%;
 }
 .intro h1 {
-  margin-top: 10px;
+  margin-top: 5vh!important;
   font-size: 70px;
   color: #73CDF3;
 }
 .intro p {
   font-size: 40px;
+}
+/* about */
+.about {
+  padding: 5vh;
+  padding-left: 30vw;
+  padding-right: 20vw;
+}
+.about h2 {
+  color: #2EA2F8;
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about a {
+  color: #2EA2F8;
+}
+.about a:hover {
+  color: #73CDF3;
+}
+.about h3, .about p {
+  color: #2E3538;
+}
+.about h3 {
+  font-size: 44px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about p {
+  font-size: 32px;
 }
 
 /* end of blocks */
