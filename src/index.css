@@ -454,6 +454,9 @@ footer a, footer p {
   .mainPage h3 {
     font-size: 36px;
   }
+  .mainPage h4 {
+    font-size: 36px;
+  }
   .mainPage p {
     font-size: 24px;
   }
@@ -476,6 +479,12 @@ footer a, footer p {
   }
 }
 @media only screen and (max-width: 530px) {
+  .mainPage h3 {
+    font-size: 28px;
+  }
+  .mainPage p {
+    font-size: 20px;
+  }
   .block {
     height: auto;
   }
@@ -521,3 +530,4 @@ footer a, footer p {
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+/* secret */

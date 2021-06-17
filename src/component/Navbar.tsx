@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { HiMenu } from 'react-icons/hi'
 
-import logo from './../images/logo.png'
-
 
 interface Prop {
     highlight?: string
@@ -19,7 +17,7 @@ export const Navbar: React.FC<Prop> = ({highlight = ''}) => {
     return (
         <div>
         <nav className="navbar">
-            <HashLink to="/#" title="Home"><img alt="website logo" src={logo} className="navIcon" />Andrew's Portfolio</HashLink>
+            <HashLink to="/#" title="Home"><img alt="website logo" src={'logo.png'} className="navIcon" />Andrew's Portfolio</HashLink>
             <div className="navItems">
                 <HashLink title="Home" to="/#" className={highlight === 'home' ? "highlightedNav": ""}>Home</HashLink>
                 <HashLink title="My Projects" to="/#projects" className={highlight === 'projects' ? "highlightedNav": ""}>Projects</HashLink>
