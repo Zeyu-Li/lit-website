@@ -11,7 +11,7 @@ export const Intro: React.FC = () => {
 
     return (
         <>
-        <div className="block singles">
+        <div className="block singles introContainer">
             <div className="intro">
                 <PenguinCoin className="pageIcons" />
                 <div className="pageText">

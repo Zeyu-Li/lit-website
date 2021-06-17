@@ -104,6 +104,9 @@ code {
   height: 100vh;
   z-index: 99;
   transition: 0.5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
 }
 .fullPageNav a {
   color: #73CDF3;
@@ -137,6 +140,10 @@ code {
 .mainPage > div {
   min-height: 100vh;
   padding-left: 30vw;
+  transition: 0.5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
 }
 .mainPage h2 {
   font-size: 60px;
@@ -167,6 +174,9 @@ code {
   border-top: 3px solid #73CDF3;
   width: 0%;
   transition: 0.8s;
+  -moz-transition: .8s;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
 }
 .intro .dividerLoaded {
   width: 90%;
@@ -180,14 +190,16 @@ code {
   font-size: 40px;
 }
 /* about */
+#about {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
 .about {
-  padding: 5vh;
-  padding-top: 10vh;
   padding-right: 20vw;
 }
 .about h2 {
   color: #2EA2F8;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 .about a {
@@ -210,14 +222,14 @@ code {
 }
 /* projects */
 .projects {
-  padding-top: 10vh;
+  padding-top: 12vh;
 }
 .projects p {
   font-size: 28px;
 }
 /* skills */
 .skills {
-  padding-top: 10vh;
+  padding-top: 12vh;
 }
 .skills h2 {
   color: #2EA2F8;
@@ -229,18 +241,25 @@ code {
 /* contact */
 .contact {
   min-height: 100vh;
-  padding-top: 10vh;
+  overflow: hidden;
 }
 .mainContact {
   padding-left: 30vw;
+  padding-right: 15vw;
+  transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
 }
 .contact h2 {
+  margin-top: 12vh;
+  margin-bottom: 0;
   font-size: 60px;
 }
 .contact .contactFooter {
   position: absolute; 
   bottom: 2vh; 
-  width: 100vw;
+  width: 100%;
 }
 .contactIcons svg {
   vertical-align: bottom;
@@ -364,6 +383,9 @@ footer a, footer p {
 /* end of footer */
 /* when smaller screen */
 @media only screen and (max-width: 1270px) {
+  .mainPage p {
+    font-size: 28px;
+  }
   .singleBody {
     grid-template-columns: 26vw 50vw;
   }
@@ -379,8 +401,17 @@ footer a, footer p {
   .singleBody a {
     font-size: 36px;
   }
+  .mainContact a {
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 1050px) {
+  .mainPage > div {
+    padding-left: 12vw;
+  }
+  .mainContact {
+    padding-left: 12vw;
+  }
   .singleBody {
     display: block;
     text-align: center;
@@ -413,6 +444,22 @@ footer a, footer p {
   }
 }
 @media only screen and (max-width: 800px) {
+  .about {
+    padding-top: 20px;
+    padding-right: 10vw;
+  }
+  .mainPage h2 {
+    font-size: 44px;
+  }
+  .mainPage h3 {
+    font-size: 36px;
+  }
+  .mainPage p {
+    font-size: 24px;
+  }
+  .mainPage a, .contact a {
+    font-size: 28px;
+  }
   .navFooterItems a {
     font-size: 1em;
   }
@@ -429,6 +476,18 @@ footer a, footer p {
   }
 }
 @media only screen and (max-width: 530px) {
+  .block {
+    height: auto;
+  }
+  .introContainer {
+    height: 100vh;
+  }
+  .mainContact {
+    padding-right: 10px;
+  }
+  .mainContact a {
+    font-size: 20px;
+  }
   #footerBreak {
     display: block;
   }
