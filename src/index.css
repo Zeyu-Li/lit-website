@@ -64,6 +64,9 @@ code {
   display: none;
   float: right;
 }
+.hamburger {
+  cursor: pointer;
+}
 .navbar a {
   color: #73CDF3;
   font-size: 25px;
@@ -85,6 +88,37 @@ code {
   padding-right: 20px;
   padding-bottom: 4px;
   filter: brightness(130%);
+}
+/* full page nav */
+.fullPageNav {
+  background-color: rgba(0, 0, 0, .5);
+  /* box-shadow: 5vw 0 40px 5vw rgb(0, 0, 0); */
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  transition: 0.5s;
+}
+.fullPageNav a {
+  color: #73CDF3;
+  font-size: 48px;
+  text-decoration: none;
+  text-align: center;
+}
+.navLinks {
+  position: absolute; 
+  bottom: 0; 
+  right: 0;
+  text-align: right;
+  padding: 20px;
+}
+.fullPageNav a:hover {
+  color: #eaeff1;
+}
+.hamburgerActive {
+  left: 0;
 }
 /* end of navbar */
 
@@ -222,16 +256,17 @@ footer a, footer p {
   }
   .navbar {
     background-color: #21282b;
+    padding: 15px;
   }
   .navbar a {
-    font-size: 20px;
+    font-size: 24px;
     padding: 8px;
   }
   .navItems {
     display: none;
   }
   .hamburger {
-    display: auto;
+    display: block;
   }
   .resumeBody {
     padding-left: 15vw;
@@ -262,6 +297,9 @@ footer a, footer p {
   #footerBreak {
     display: block;
   }
+  .navbar a {
+    font-size: 20px;
+  }
   .pageIcons {
     max-width: 70vw;
   }
@@ -277,4 +315,12 @@ footer a, footer p {
   .homeIcon svg {
     height: 30px;
   }
+}
+/* animations */
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
 }
