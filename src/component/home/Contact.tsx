@@ -11,12 +11,14 @@ export const Contact: React.FC<Props> = ({highlight}) => {
 
     return (
         <>
-        <div className="contact">
+        <div id="contact" className="contact" style={{position: "relative"}}>
             <div className="mainContact">
-                <h2 id="contact">Contact</h2>
+                <h2>Contact</h2>
             </div>
             
-            <Footer highlight={highlight} />
+            <div className="contactFooter">
+                <Footer highlight={highlight} />
+            </div>
         </div>
         </>
     )

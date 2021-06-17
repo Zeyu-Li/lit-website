@@ -5,12 +5,14 @@ export const Projects: React.FC = () => {
 
     return (
         <>
-            <div className="projects">
-                <h2 id="projects">Projects</h2>
-                <h4>Chatter</h4>
-                <p>
-                    A realtime chat website<br /> Using React, Firebase, JavaScript
-                </p>
+            <div id="projects" className="projects">
+                <h2>Projects</h2>
+                <div className="singleProject">
+                    <h4>Chatter</h4>
+                    <p>
+                        A realtime chat website<br />{'>'} Using React, Firebase, JavaScript
+                    </p>
+                </div>
             </div>
         </>
     )

@@ -211,12 +211,18 @@ code {
 .projects {
   padding-top: 5vh;
 }
+.projects p {
+  font-size: 28px;
+}
 /* skills */
 .skills {
   padding-top: 5vh;
 }
 .skills h2 {
   color: #2EA2F8;
+}
+.skills p {
+  font-size: 28px;
 }
 
 /* contact */
@@ -229,6 +235,11 @@ code {
 }
 .contact h2 {
   font-size: 60px;
+}
+.contact .contactFooter {
+  position: absolute; 
+  bottom: 0; 
+  width: 100vw;
 }
 
 /* end of blocks */
