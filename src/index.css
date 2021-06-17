@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, p, a {
   color: #F9F9F9;
   font-family: 'Fira Code', monospace;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: normal;
 }
 a {
@@ -134,6 +134,23 @@ code {
 .white {
   background-color: #F9F9F9;
 }
+.mainPage > div {
+  min-height: 100vh;
+  padding-left: 30vw;
+}
+.mainPage h2 {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+.mainPage h3 {
+  font-size: 48px;
+  margin: 0;
+}
+.mainPage h4 {
+  color: #73CDF3;
+  font-size: 48px;
+  margin: 0;
+}
 /* intro */
 .intro {
   display: inline-grid;
@@ -165,12 +182,10 @@ code {
 /* about */
 .about {
   padding: 5vh;
-  padding-left: 30vw;
   padding-right: 20vw;
 }
 .about h2 {
   color: #2EA2F8;
-  font-size: 60px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -189,7 +204,31 @@ code {
   margin-bottom: 10px;
 }
 .about p {
+  margin-top: 0;
   font-size: 32px;
+}
+/* projects */
+.projects {
+  padding-top: 5vh;
+}
+/* skills */
+.skills {
+  padding-top: 5vh;
+}
+.skills h2 {
+  color: #2EA2F8;
+}
+
+/* contact */
+.contact {
+  min-height: 100vh;
+  padding-top: 5vh;
+}
+.mainContact {
+  padding-left: 30vw;
+}
+.contact h2 {
+  font-size: 60px;
 }
 
 /* end of blocks */

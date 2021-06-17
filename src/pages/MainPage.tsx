@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import { Navbar, Footer, Intro, About, Projects, Skills, Contact } from '../component/Component';
+import { Navbar, Intro, About, Projects, Skills, Contact } from '../component/Component';
 
 
 export const MainPage: React.FC = () => {
@@ -20,14 +20,15 @@ export const MainPage: React.FC = () => {
 
 
     return (
-        <>
+        <div id="top">
             <Navbar highlight={currentItem} />
             <Intro />
-            <About />
-            <Projects />
-            <Skills />
-            <Contact />
-            <Footer  highlight={currentItem} />
-        </>
+            <div className="mainPage">
+                <About />
+                <Projects />
+                <Skills />
+            </div>
+            <Contact highlight={currentItem} />
+        </div>
     )
 }
