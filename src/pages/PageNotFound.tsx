@@ -20,7 +20,7 @@ export const PageNotFound: React.FC = () => {
                 history.push('/secretsauce')
             }
         }
-    }, [])
+    }, [history])
 
     return (
         <div className="block singles">
