@@ -19,7 +19,7 @@ export const Secret: React.FC = () => {
     }
 
     const clickedCoin = () => {
-        if (rolls == 1) {
+        if (rolls === 1) {
             setRolls(0)
             troll()
         } else {

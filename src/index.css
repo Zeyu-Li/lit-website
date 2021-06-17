@@ -166,7 +166,7 @@ code {
 .intro .divider  {
   border-top: 3px solid #73CDF3;
   width: 0%;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .intro .dividerLoaded {
   width: 90%;
@@ -182,6 +182,7 @@ code {
 /* about */
 .about {
   padding: 5vh;
+  padding-top: 10vh;
   padding-right: 20vw;
 }
 .about h2 {
@@ -209,14 +210,14 @@ code {
 }
 /* projects */
 .projects {
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 .projects p {
   font-size: 28px;
 }
 /* skills */
 .skills {
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 .skills h2 {
   color: #2EA2F8;
@@ -228,7 +229,7 @@ code {
 /* contact */
 .contact {
   min-height: 100vh;
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 .mainContact {
   padding-left: 30vw;
@@ -238,8 +239,20 @@ code {
 }
 .contact .contactFooter {
   position: absolute; 
-  bottom: 0; 
+  bottom: 2vh; 
   width: 100vw;
+}
+.contactIcons svg {
+  vertical-align: bottom;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.mainContact a {
+  color: #2EA2F8;
+  font-size: 48px;
+}
+.mainContact a:hover {
+  color: #73CDF3;
 }
 
 /* end of blocks */
@@ -321,6 +334,9 @@ code {
 .copyrightText {
   font-size: 24px;
   text-align: center;
+}
+footer {
+  padding-bottom: 2vh; 
 }
 footer a, footer p {
   color: #2EA2F8;
