@@ -24,7 +24,7 @@ export const Secret: React.FC = () => {
                 <PenguinCoin className="pageIcons" title="Free PBC???" onClick={troll} style={{cursor: "pointer"}} />
                 <div className="pageText">
                     <h1>Secret???</h1>
-                    <p className="singleText">Good job, you got a <wbr />Penguin Bottom Coin</p>
+                    <p className="singleText">Good job! You got a <wbr />Penguin Bottom Coin</p>
                     <Link to="/" title="Go Home"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={70}  /></span>
                     Take me home</Link>
                 </div>

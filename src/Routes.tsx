@@ -10,7 +10,7 @@ export const Routes: React.FC = () => {
             <BrowserRouter>
                 <Switch>
                     <Route exact path='/' component={MainPage} />
-                    <Route path='/secret' component={Secret} />
+                    <Route path='/secretsauce' component={Secret} />
                     <Route path='/resume' component={Resume} />
                     <Route path="/404" component={PageNotFound} />
                     <Redirect to="/404" />
