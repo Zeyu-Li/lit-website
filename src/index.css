@@ -259,12 +259,17 @@ code {
 /* skills */
 .skills {
   padding-top: 12vh;
+  padding-right: 7vw;
 }
-.skills h2 {
+.skills h2, .skills h3 {
   color: #2EA2F8;
 }
 .skills p {
   font-size: 28px;
+  color: #2E3538;
+}
+.skills #lastItem {
+  padding-bottom: 10vh;
 }
 
 /* contact */
