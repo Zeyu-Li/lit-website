@@ -51,7 +51,12 @@ export const Projects: React.FC = () => {
                 </div>
                 <div className="singleProject" style={{paddingBottom: "5vh"}}>
                     <h4>Advanced Unity Tutorial</h4>
-                    <img alt="django screenshots" src={"django.png"} />
+                    <Parallax  bgImage={"game.png"} bgImageAlt="game screen" strength={150} style={{width: "70vw"}}>
+                        {/* <Background className="custom-bg">
+                            <img alt="django screenshots" src={"django.png"} />
+                        </Background> */}
+                        <div style={{height: "44vw"}}></div>
+                    </Parallax>
                     <p>
                         An Advanced Unity Tutorial, part of a larger Unity Tutorial series. Play demo is found below. 
                         <br />{'>'} Using C#, Blender, Adobe Illustator, Unity 
