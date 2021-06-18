@@ -13,7 +13,8 @@ export const Intro: React.FC = () => {
         <>
         <div className="block singles introContainer">
             <div className="intro">
-                <PenguinCoin className="pageIcons" />
+                {/* <PenguinCoin className="pageIcons" /> */}
+                <div></div>
                 <div className="pageText">
                     <h1>Andrew Li</h1>
                     <div className={`divider ${loaded ? "dividerLoaded" : ""}`} />

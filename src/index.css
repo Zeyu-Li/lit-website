@@ -160,10 +160,10 @@ code {
 }
 /* Overlay */
 .model {
-  height: 100vh;
+  height: 95vh;
+  width: 95vh;
   position: fixed;
-  top: 0;
-  left: 25vw;
+  top: 5vh;
   z-index: 99;
 }
 /* intro */
