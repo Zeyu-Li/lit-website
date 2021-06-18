@@ -227,6 +227,31 @@ code {
 .projects p {
   font-size: 28px;
 }
+.projects a {
+  color: #2EA2F8;
+  font-size: 28px;
+}
+.projects a:hover {
+  color: #73CDF3;
+}
+/* single projects */
+.singleProject {
+  padding-bottom: 150px;
+}
+.singleProject img {
+  width: 70vw;
+}
+.singleProject p {
+  padding-right: 10vw;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.singleProject h4 {
+  padding-bottom: 10px;
+}
+.endOfProjects {
+  padding-bottom: 10vh;
+}
 /* skills */
 .skills {
   padding-top: 12vh;
@@ -406,6 +431,9 @@ footer a, footer p {
   }
 }
 @media only screen and (max-width: 1050px) {
+  .singleProject {
+    padding-bottom: 50px;
+  }
   .mainPage > div {
     padding-left: 12vw;
   }

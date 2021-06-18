@@ -28,9 +28,9 @@ export const Contact: React.FC<Props> = ({highlight}) => {
         <div id="contact" className="contact" style={{position: "relative"}}>
             <div className="mainContact">
                 <h2>Contact</h2>
-                <span className="contactIcons"><IoMdMail size={iconSize} color="2EA2F8" /></span> <a href="mailto:zeyu.li23@gmail.com" title="Email me">zeyu.li23<wbr />@gmail.com</a><br/>
-                <span className="contactIcons"><AiFillLinkedin size={iconSize} color="2EA2F8" /></span> <a href="https://www.linkedin.com/in/andrew-li23/" title="Connect with me on LinkedIn">andrew-li23</a><br/>
-                <span className="contactIcons"><VscGithub size={iconSize} color="2EA2F8" /></span> <a href="https://github.com/Zeyu-Li" title="Check my GitHub">Zeyu-Li</a>
+                <a href="mailto:zeyu.li23@gmail.com" title="Email me"><span className="contactIcons"><IoMdMail size={iconSize} color="2EA2F8" /></span>zeyu.li23<wbr />@gmail.com</a><br/>
+                <a href="https://www.linkedin.com/in/andrew-li23/" title="Connect with me on LinkedIn"><span className="contactIcons"><AiFillLinkedin size={iconSize} color="2EA2F8" /></span>andrew-li23</a><br/>
+                <a href="https://github.com/Zeyu-Li" title="Check my GitHub"><span className="contactIcons"><VscGithub size={iconSize} color="2EA2F8" /></span>Zeyu-Li</a>
             </div>
             
             <div className="contactFooter">
