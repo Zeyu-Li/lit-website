@@ -25,19 +25,3 @@ export const Skills: React.FC = () => {
         </>
     )
 }
-/*
-🌺 Frontend
-JavaScript/Typescript, HTML, CSS, WebAssembly
-💼 Backend
-Python (Django), JavaScript (Express.js), SQL, Firebase, C#, AWS
-✨ Other Languages
-C++, Java, Lua, LaTeX, Markdown, ShellScript
-📚 Libraries/Frameworks
-React/React Native, Django, Electron.js, Express.js,  jekyll
-🎮 Game
-Unity, Unreal
-🌟 Other
-Figma, Git, GitHub, Blender, Adobe Illustrator
-📖 Learning
-TensorFlow, Haskell
-*/

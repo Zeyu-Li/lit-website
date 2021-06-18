@@ -102,7 +102,7 @@ code {
   left: 100vw;
   width: 100vw;
   height: 100vh;
-  z-index: 99;
+  z-index: 98;
   transition: 0.5s;
   -moz-transition: .5s;
   -webkit-transition: .5s;
@@ -157,6 +157,14 @@ code {
   color: #73CDF3;
   font-size: 48px;
   margin: 0;
+}
+/* Overlay */
+.model {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 25vw;
+  z-index: 99;
 }
 /* intro */
 .intro {

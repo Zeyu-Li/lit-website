@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import { Navbar, Intro, About, Projects, Skills, Contact } from '../component/Component';
+import { Navbar, Intro, About, Projects, Skills, Contact, Overlay } from '../component/Component';
 
 
 export const MainPage: React.FC = () => {
@@ -21,6 +21,7 @@ export const MainPage: React.FC = () => {
 
     return (
         <div id="top">
+            <Overlay />
             <Navbar highlight={currentItem} />
             <Intro />
             <div className="mainPage">
