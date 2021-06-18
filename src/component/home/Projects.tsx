@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Parallax, Background } from 'react-parallax'
 import { VscGithub } from 'react-icons/vsc'
 import { MdWeb } from 'react-icons/md'
 import { FaGamepad } from 'react-icons/fa'
@@ -12,7 +13,12 @@ export const Projects: React.FC = () => {
                 <h2>Projects</h2>
                 <div className="singleProject">
                     <h4>Chatter</h4>
-                    <img alt="chatter screenshots" src={"chatter.png"} />
+                    <Parallax  bgImage={"chatter.png"} bgImageAlt="chatter screenshots" strength={300} style={{width: "70vw"}}>
+                        {/* <Background className="custom-bg">
+                            <img alt="chatter screenshots" src={"chatter.png"} />
+                        </Background> */}
+                        <div style={{height: "44vw"}}></div>
+                    </Parallax>
                     <p>
                         A realtime chat website
                         <br />{'>'} Using React, Firebase, JavaScript
@@ -31,7 +37,12 @@ export const Projects: React.FC = () => {
                 </div>
                 <div className="singleProject">
                     <h4>Django Ecommerce</h4>
-                    <img alt="django screenshots" src={"django.png"} />
+                    <Parallax  bgImage={"django.png"} bgImageAlt="django screenshots" strength={300} style={{width: "70vw"}}>
+                        {/* <Background className="custom-bg">
+                            <img alt="django screenshots" src={"django.png"} />
+                        </Background> */}
+                        <div style={{height: "44vw"}}></div>
+                    </Parallax>
                     <p>
                         An ecommerce website build on Django and Bootstrap with login and shopping cart (connected to Stripe)
                         <br />{'>'} Using Python (Django), Stripe, JavaScript, CSS, HTML, Bootstrap

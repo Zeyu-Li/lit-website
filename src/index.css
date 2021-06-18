@@ -252,6 +252,10 @@ code {
 .endOfProjects {
   padding-bottom: 10vh;
 }
+/* parallax */
+/* .react-parallax-bgimage {
+  transition: 0.1s;
+} */
 /* skills */
 .skills {
   padding-top: 12vh;
