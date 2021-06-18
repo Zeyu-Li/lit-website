@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import { Parallax } from 'react-parallax'
 import { VscGithub } from 'react-icons/vsc'
 import { MdWeb } from 'react-icons/md'

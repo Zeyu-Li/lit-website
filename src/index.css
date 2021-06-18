@@ -158,13 +158,40 @@ code {
   font-size: 48px;
   margin: 0;
 }
+.extraMargin {
+  margin-left: 2vw;
+}
 /* Overlay */
 .model {
-  height: 95vh;
-  width: 95vh;
   position: fixed;
   top: 5vh;
+  height: 95vh;
+  width: 30vw;
+  min-width: 450px;
   z-index: 99;
+  transition: .8s;
+  -moz-transition: .8s;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+}
+.modelSmall {
+  height: 50vh;
+  width: 50vh;
+  top: 30vh;
+}
+.blueSide {
+  position: fixed;
+  top: 0;
+  width: 15vw;
+  height: 100vh;
+  /* border */
+  border-right: 12px solid #2E3538;
+  z-index: -10;
+}
+.lightBlueSide {
+  width: 7vw;
+  height: 100%;
+  border-left: 10px solid #ADE0F5;
 }
 /* intro */
 .intro {
@@ -425,6 +452,9 @@ footer a, footer p {
 /* end of footer */
 /* when smaller screen */
 @media only screen and (max-width: 1270px) {
+  .model {
+    left: 0vw;
+  }
   .mainPage p {
     font-size: 28px;
   }
@@ -448,6 +478,28 @@ footer a, footer p {
   }
 }
 @media only screen and (max-width: 1050px) {
+  /* sideThing */
+  .blueSide {
+    width: 7vw;
+    border-right: 10px solid #2E3538;
+  }
+  .lightBlueSide {
+    width: 7vw;
+    border-right: 10px solid #ADE0F5;
+  }
+  .pageText h1 {
+    font-size: 48px;
+  }
+  .pageText .singleText {
+    font-size: 30px;
+  }
+  .intro {
+    grid-template-columns: 22vw 50vw;
+  }
+  .model {
+    left: -8vw;
+    min-width: auto;
+  }
   .singleProject {
     padding-bottom: 50px;
   }
@@ -489,6 +541,14 @@ footer a, footer p {
   }
 }
 @media only screen and (max-width: 800px) {
+  .model {
+    top: 20vh;
+    height: 50vh;
+    left: -8vw;
+  }
+  .extraMargin {
+    margin-left: 10vw;
+  }
   .about {
     padding-top: 20px;
     padding-right: 10vw;
@@ -524,6 +584,12 @@ footer a, footer p {
   }
 }
 @media only screen and (max-width: 530px) {
+  .model {
+    left: -25vw;
+  }
+  .extraMargin {
+    margin-left: 25vw;
+  }
   .mainPage h3 {
     font-size: 28px;
   }

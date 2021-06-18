@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import { ReactComponent as PenguinCoin } from '../../images/coin.svg'
 
 
 export const Intro: React.FC = () => {
