@@ -14,8 +14,8 @@ export const Secret: React.FC = () => {
     }, [])
 
     const troll = () => {
-        // we do a little trolling :p
-        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank")
+        // we do a little trolling :p (but not too much lol)
+        window.open("https://github.com/Zeyu-Li/bottom-penguin", "_blank")
     }
 
     const clickedCoin = () => {

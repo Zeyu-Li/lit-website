@@ -8,7 +8,7 @@ export const Skills: React.FC = () => {
             <div className="skills white">
                 <h2>Skills</h2>
                 <h3>🌺 Frontend</h3>
-                <p>JavaScript/Typescript, HTML, CSS, WebAssembly</p>
+                <p>JavaScript/<wbr />Typescript, HTML, CSS, WebAssembly</p>
                 <h3>💼 Backend</h3>
                 <p>Python (Django), JavaScript (Express.js), SQL, Firebase, C#, AWS</p>
                 <h3>✨ Other Languages</h3>

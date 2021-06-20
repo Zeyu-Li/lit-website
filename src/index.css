@@ -169,10 +169,10 @@ code {
   width: 30vw;
   min-width: 450px;
   z-index: 99;
-  transition: .8s;
-  -moz-transition: .8s;
-  -webkit-transition: .8s;
-  -o-transition: .8s;
+  transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
 }
 .modelSmall {
   height: 50vh;
@@ -251,9 +251,11 @@ code {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.about p, .about a {
+  font-size: 32px;
+}
 .about p {
   margin-top: 0;
-  font-size: 32px;
 }
 /* projects */
 .projects {
@@ -455,7 +457,7 @@ footer a, footer p {
   .model {
     left: 0vw;
   }
-  .mainPage p {
+  .mainPage p, .about a {
     font-size: 28px;
   }
   .singleBody {
@@ -593,7 +595,7 @@ footer a, footer p {
   .mainPage h3 {
     font-size: 28px;
   }
-  .mainPage p {
+  .mainPage p, .about a {
     font-size: 20px;
   }
   .block {
@@ -628,6 +630,14 @@ footer a, footer p {
   }
   .homeIcon svg {
     height: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .about {
+    padding-right: 20px;
+  }
+  .about p, .about a {
+    font-size: 16px;
   }
 }
 /* animations */
