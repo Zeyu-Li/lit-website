@@ -6,16 +6,18 @@ My personal portfolio website using Typescript-React
 
 ![preview](public/preview.png)
 
-Figma: https://www.figma.com/file/mkZXmrdOTVMlf9WKscBTjd/Portfolio-Website
+<!--- Figma: https://www.figma.com/file/mkZXmrdOTVMlf9WKscBTjd/Portfolio-Website --->
 
 ## Dependencies
 
 * react
 * react router dom
-* three
+* three.js
 * react parallax
 * react pdf
 * react icons
+* react use
+* gsap
 
 ## Notice
 

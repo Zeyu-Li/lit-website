@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
+import gsap from 'gsap'
 
 import { ReactComponent as PiratePenguin } from '../images/pirate.svg'
 import { Navbar } from '../component/Component';
@@ -21,6 +22,16 @@ export const PageNotFound: React.FC = () => {
             }
         }
     }, [history])
+    useEffect(()=> {
+        // on mount -> animation
+        
+        gsap.from('.header1', 1, {
+            autoAlpha: 0,
+            rotationX: 80,
+            transformOrigin: '50% 50% -30px',
+            ease: 'power3.easeOut',
+        })
+    }, [])
 
     return (
         <div className="block singles">
@@ -28,7 +39,7 @@ export const PageNotFound: React.FC = () => {
             <div className="singleBody">
                 <PiratePenguin className="pageIcons" />
                 <div className="pageText">
-                    <h1>Error 404</h1>
+                    <h1 className='header1'>Error 404</h1>
                     <p>This page must’ve been <wbr />stolen by a pirate :{'('}</p>
                     <Link to="/" title="Go Home"><span className="homeIcon"><AiFillHome color="#2EA2F8" size={54} /></span>
                     Take me home</Link>

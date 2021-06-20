@@ -99,7 +99,7 @@ code {
   /* box-shadow: 5vw 0 40px 5vw rgb(0, 0, 0); */
   position: fixed;
   top: 0;
-  left: 100vw;
+  left: 102vw;
   width: 100vw;
   height: 100vh;
   z-index: 98;
@@ -489,6 +489,9 @@ footer a, footer p {
     width: 7vw;
     border-right: 10px solid #ADE0F5;
   }
+  .extraMargin {
+    margin-left: 10vw;
+  }
   .pageText h1 {
     font-size: 48px;
   }
@@ -548,9 +551,6 @@ footer a, footer p {
     height: 50vh;
     left: -8vw;
   }
-  .extraMargin {
-    margin-left: 10vw;
-  }
   .about {
     padding-top: 20px;
     padding-right: 10vw;
@@ -595,7 +595,7 @@ footer a, footer p {
   .mainPage h3 {
     font-size: 28px;
   }
-  .mainPage p, .about a {
+  .mainPage p, .about a, .endOfProjects p a {
     font-size: 20px;
   }
   .block {
@@ -620,7 +620,7 @@ footer a, footer p {
     max-width: 70vw;
   }
   .pageText h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
   .pageText p {
     font-size: 20px;
@@ -640,7 +640,22 @@ footer a, footer p {
     font-size: 16px;
   }
 }
+/* why use a phone less than this size :p */
+@media only screen and (max-width: 350px) {
+  .intro .pageText h1 {
+    font-size: 28px;
+  }
+  .intro .pageText p {
+    font-size: 20px;
+  }
+}
 /* animations */
+.header1{
+  
+  visibility:hidden;
+}
+/* slide ins */
+/* keyframes */
 @-webkit-keyframes slide {
   100% { left: 0; }
 }
