@@ -16,6 +16,7 @@ My personal portfolio website using Typescript-React
 
 * react
 * react router dom
+* react router hash link
 * three.js
 * react parallax
 * react pdf

@@ -1,4 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
+import {FiChevronsDown} from 'react-icons/fi'
+import { HashLink } from 'react-router-hash-link'
 import gsap from 'gsap'
 
 
@@ -51,6 +53,7 @@ export const Intro: React.FC = () => {
                     </span>
                 </div>
             </div>
+            <div className="scrollDown transition" style={{textAlign: 'center'}}><HashLink to="/#about" title="Go down"><FiChevronsDown size={64} color="#2EA2F8" /></HashLink></div>
         </div>
     )
 }

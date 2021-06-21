@@ -180,6 +180,8 @@ code {
   -moz-transition: .2s;
   -webkit-transition: .2s;
   -o-transition: .2s;
+  /* allows links to be clicked even tho it is below */
+  pointer-events: none;
 }
 .modelSmall {
   height: 50vh;
@@ -344,10 +346,18 @@ code {
   bottom: 2vh; 
   width: 100%;
 }
+.scrollDown {
+  position: absolute; 
+  bottom: 4vh; 
+  width: 100%;
+}
 .contactIcons svg {
   vertical-align: bottom;
   padding-right: 20px;
   padding-top: 20px;
+}
+.scrollDown:hover {
+  filter: brightness(1.3);
 }
 .mainContact a {
   color: #2EA2F8;
