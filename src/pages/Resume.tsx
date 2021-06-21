@@ -3,6 +3,7 @@ import { Document, Page, pdfjs } from 'react-pdf'
 
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import { Navbar, Footer } from '../component/Component'
+import gsap from 'gsap'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 
@@ -21,6 +22,13 @@ export const Resume: React.FC = () => {
         
         // set resize listener
         window.addEventListener('resize', resizeListener)
+        // fade in title
+        gsap.from('.header1', 1,  {
+            autoAlpha: 0,
+            rotationX: 80,
+            transformOrigin: '50% 50% -40px',
+            ease: 'power3.easeOut',
+        })
     }, [])
 
     const removeTextLayerOffset = () => {
@@ -38,7 +46,7 @@ export const Resume: React.FC = () => {
             <Navbar highlight="resume" />
             <div className="block">
                 <div className="resumeBody">
-                    <h1>Resume</h1>
+                    <h1 className="header1">Resume</h1>
                     <p><a title="Download resume" href="resume.pdf" target="_blank">Direct link</a> to my resume or preview below</p>
                     <Document file={"resume.pdf"}>
                         <div style={{height: PDFWidth * (11/8.5)}}>
