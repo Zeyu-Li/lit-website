@@ -4,7 +4,9 @@
 
 <!--- Figma: https://www.figma.com/file/mkZXmrdOTVMlf9WKscBTjd/Portfolio-Website --->
 
-👋Hi, I'm a full stack developer and I make stuff! This is my website and I hope you enjoy the experience! 
+![Vercel](https://vercelbadge.vercel.app/api/Zeyu-Li/lit-website?style=for-the-badge)
+
+👋 Hi, I'm a full stack developer and I make stuff! This is my website and I hope you enjoy the experience! 
 
 ---
 
