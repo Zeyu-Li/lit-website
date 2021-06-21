@@ -7,7 +7,7 @@ import { ReactComponent as PenguinCoin } from '../images/coin.svg'
 import { Navbar } from '../component/Component'
 
 
-export const Secret: React.FC = () => {
+export const Secret: React.FC = React.memo(() => {
     const [rolls, setRolls] = useState(0)
     // sets title
     useEffect(() => {
@@ -49,4 +49,4 @@ export const Secret: React.FC = () => {
             </div>
         </div>
     )
-}
+})

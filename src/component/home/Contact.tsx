@@ -10,7 +10,7 @@ interface Props {
     highlight: string
 }
 
-export const Contact: React.FC<Props> = ({highlight}) => {
+export const Contact: React.FC<Props> = React.memo(({highlight}) => {
     const [iconSize, setIconSize] = useState(window.innerWidth > 800 ? 60 : 28)
 
     // on resize
@@ -39,4 +39,4 @@ export const Contact: React.FC<Props> = ({highlight}) => {
         </div>
         </>
     )
-}
+})

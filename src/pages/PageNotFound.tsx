@@ -6,7 +6,7 @@ import gsap from 'gsap'
 import { ReactComponent as PiratePenguin } from '../images/pirate.svg'
 import { Navbar } from '../component/Component';
 
-export const PageNotFound: React.FC = () => {
+export const PageNotFound: React.FC = React.memo(() => {
     const history = useHistory()
     // sets title
     useEffect(() => {
@@ -47,4 +47,4 @@ export const PageNotFound: React.FC = () => {
             </div>
         </div>
     )
-}
+})

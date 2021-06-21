@@ -1,11 +1,11 @@
 import React, {useState, Suspense} from 'react'
 import { Canvas } from '@react-three/fiber'
 
-import Model from './Model'
+import {Model} from './Model'
 import { useEffect } from 'react'
 
 
-export const Overlay: React.FC = () => {
+export const Overlay: React.FC = React.memo(() => {
     const [blueSide, setBlueSide] = useState(window.innerWidth > 700)
     const [top, setTop] = useState(window.scrollY < window.innerHeight)
     const [smallSize, setSmallSize] = useState(window.innerWidth < 1050)
@@ -69,4 +69,4 @@ export const Overlay: React.FC = () => {
             {blueSide ? <div className="blueSide"></div> : null}
         </div>
     )
-}
+})

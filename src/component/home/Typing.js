@@ -1,6 +1,8 @@
 import TypeIt from 'typeit-react'
+import React from 'react'
 
-export const Typing = () => {
+
+export const Typing = React.memo(() => {
     const words = ["frontend", "backend", "JavaScript", "Python", "for you"]
 
     return (
@@ -30,4 +32,4 @@ export const Typing = () => {
             }}
         ></TypeIt>
     )
-}
+})

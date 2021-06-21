@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link'
 import gsap from 'gsap'
 
 
-export const Intro: React.FC = () => {
+export const Intro: React.FC = React.memo(() => {
     const wave = useRef(null)
     const [loaded, setLoad] = useState(false)
     const [waveMe, setWaveMe] = useState(window.innerWidth > 1050)
@@ -56,4 +56,4 @@ export const Intro: React.FC = () => {
             <div className="scrollDown transition" style={{textAlign: 'center'}}><HashLink to="/#about" title="Go down"><FiChevronsDown size={64} color="#2EA2F8" /></HashLink></div>
         </div>
     )
-}
+})

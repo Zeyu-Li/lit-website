@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export const Skills: React.FC = () => {
+export const Skills: React.FC = React.memo(() => {
 
     return (
         <>
@@ -24,4 +24,4 @@ export const Skills: React.FC = () => {
             </div>
         </>
     )
-}
+})

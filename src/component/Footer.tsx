@@ -6,7 +6,7 @@ interface Prop {
     highlight?: string
 }
 
-export const Footer: React.FC<Prop> = ({highlight = ''}) => {
+export const Footer: React.FC<Prop> = React.memo(({highlight = ''}) => {
 
     return (
         <>
@@ -24,4 +24,4 @@ export const Footer: React.FC<Prop> = ({highlight = ''}) => {
             </footer>
         </>
     )
-}
+})

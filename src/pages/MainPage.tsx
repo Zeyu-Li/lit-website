@@ -1,8 +1,15 @@
-import React, {useState, useEffect } from 'react'
+import React, {useState, useEffect, Suspense, lazy } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import { Navbar, Intro, About, Projects, Skills, Contact, Overlay } from '../component/Component';
+import { Intro } from '../component/Component'
 
+
+const Navbar = lazy(()=> import('../component/Component').then(mod => ({default: mod.Navbar})))
+const Overlay = lazy(()=> import('../component/Component').then(mod => ({default: mod.Overlay})))
+const About = lazy(()=> import('../component/Component').then(mod => ({default: mod.About})))
+const Projects = lazy(()=> import('../component/Component').then(mod => ({default: mod.Projects})))
+const Skills = lazy(()=> import('../component/Component').then(mod => ({default: mod.Skills})))
+const Contact = lazy(()=> import('../component/Component').then(mod => ({default: mod.Contact})))
 
 export const MainPage: React.FC = () => {
     // sets title
@@ -13,7 +20,7 @@ export const MainPage: React.FC = () => {
     const location = useLocation()
     const [currentItem, setCurrentItem] = useState('home')
     useEffect(() => {
-        let current = location.hash.substring(1)
+        const current = location.hash.substring(1)
         // console.log(current)
         setCurrentItem(current.length === 0 ? 'home' : current)
     }, [location])
@@ -21,15 +28,23 @@ export const MainPage: React.FC = () => {
 
     return (
         <div id="top">
-            <Overlay />
-            <Navbar highlight={currentItem} />
+            <Suspense fallback={<div />}>
+                <Overlay />
+            </Suspense>
+            <Suspense fallback={<div />}>
+                <Navbar highlight={currentItem} />
+            </Suspense>
             <Intro />
-            <div className="mainPage">
-                <About />
-                <Projects />
-                <Skills />
-            </div>
-            <Contact highlight={currentItem} />
+            <Suspense fallback={<div />}>
+                <div className="mainPage">
+                    <About />
+                    <Projects />
+                    <Skills />
+                </div>
+            </Suspense>
+            <Suspense fallback={<div />}>
+                <Contact highlight={currentItem} />
+            </Suspense>
         </div>
     )
 }

@@ -7,7 +7,7 @@ interface Prop {
     highlight?: string
 }
 
-export const Navbar: React.FC<Prop> = ({highlight = ''}) => {
+export const Navbar: React.FC<Prop> = React.memo(({highlight = ''}) => {
     const [hamburger, setHamburger] = useState(false)
     // hamburger
     const clickedHamburger = () => {
@@ -40,4 +40,4 @@ export const Navbar: React.FC<Prop> = ({highlight = ''}) => {
         </div>
         </div>
     )
-}
+})

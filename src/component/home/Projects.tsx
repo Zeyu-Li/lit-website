@@ -5,7 +5,7 @@ import { MdWeb } from 'react-icons/md'
 import { FaGamepad } from 'react-icons/fa'
 
 
-export const Projects: React.FC = () => {
+export const Projects: React.FC = React.memo(() => {
 
     return (
         <>
@@ -37,7 +37,7 @@ export const Projects: React.FC = () => {
                 </div>
                 <div className="singleProject">
                     <h4>Django Ecommerce</h4>
-                    <Parallax  bgImage={"django.png"} bgImageAlt="django screenshots" strength={300} style={{width: "70vw"}}>
+                    <Parallax bgImage={"django.png"} bgImageAlt="django screenshots" strength={300} style={{width: "70vw"}}>
                         {/* <Background className="custom-bg">
                             <img alt="django screenshots" src={"django.png"} />
                         </Background> */}
@@ -72,4 +72,4 @@ export const Projects: React.FC = () => {
             </div>
         </>
     )
-}
+})

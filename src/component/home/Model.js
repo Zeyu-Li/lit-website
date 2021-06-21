@@ -6,29 +6,18 @@ import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
-export default function Model(props) {
+export const Model = ({scroll, small}) => {
     const group = useRef()
     const { nodes, materials } = useGLTF('./penguin.gltf')
-    // const [scale, setScale] = useState(1)
-
-
-    // on load
-    // useEffect(()=> {
-    //     if(props.small) {
-    //         setScale(.5)
-    //     } else {
-    //         setScale(1)
-    //     }
-    // }, [props.small])
-
+    
     // Animate model
     useFrame((state) => {
-        group.current.rotation.x = 0.04 * (props.scroll / 20)
-        group.current.rotation.y = 0.02 * (props.scroll / 20)
+        group.current.rotation.x = 0.04 * (scroll / 20)
+        group.current.rotation.y = 0.02 * (scroll / 20)
     })
 
     return (
-        <group ref={group} {...props} dispose={null} scale={props.small}>
+        <group ref={group} dispose={null} scale={small}>
         <group rotation={[0.21, 0, 0]} scale={[0.78, 1.13, 0.33]}>
             <mesh
             castShadow

@@ -6,7 +6,7 @@ import gsap from 'gsap'
 import { Typing } from './Typing'
 
 
-export const About: React.FC = () => {
+export const About: React.FC = React.memo(() => {
     const sectionRef = useRef(null)
     const header = useRef(null)
     const [active, setActive] = useState(false)
@@ -44,4 +44,4 @@ export const About: React.FC = () => {
             </div>
         </div>
     )
-}
+})

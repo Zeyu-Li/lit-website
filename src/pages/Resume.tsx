@@ -7,7 +7,7 @@ import gsap from 'gsap'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 
-export const Resume: React.FC = () => {
+export const Resume: React.FC = React.memo(() => {
     // sets title
     useEffect(() => {
         document.title = "Andrew's Portfolio | Resume"
@@ -58,4 +58,4 @@ export const Resume: React.FC = () => {
             </div>
         </>
     )
-}
+})
