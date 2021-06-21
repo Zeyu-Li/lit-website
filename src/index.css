@@ -199,8 +199,13 @@ code {
   grid-template-columns: 22vw 40vw;
   padding-left: 15vw;
   padding-right: 15vw;
-  padding-top: 28vh;
   padding-bottom: 18vh;
+}
+.intro .pageText {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  height: 100vh;
 }
 .intro > svg  {
   height: 46vh;
@@ -217,11 +222,10 @@ code {
   width: 90%;
 }
 .intro h1 {
-  margin-top: 5vh!important;
   font-size: 70px;
   color: #73CDF3;
 }
-.intro p {
+.intro .singleText {
   font-size: 40px;
 }
 /* about */
@@ -312,6 +316,7 @@ code {
 /* contact */
 .contact {
   min-height: 100vh;
+  min-height: max(100vh, 550px);
   overflow: hidden;
 }
 .mainContact {
@@ -481,6 +486,9 @@ footer a, footer p {
 }
 @media only screen and (max-width: 1050px) {
   /* sideThing */
+  .inline p {
+    font-size: 40px;
+  }
   .blueSide {
     width: 7vw;
     border-right: 10px solid #2E3538;
@@ -543,6 +551,9 @@ footer a, footer p {
   }
   .resumeBody p {
     font-size: 24px;
+  }
+  .inline {
+    grid-template-columns: auto auto;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -622,7 +633,7 @@ footer a, footer p {
   .pageText h1 {
     font-size: 36px;
   }
-  .pageText p {
+  .mainPage .pageText p {
     font-size: 20px;
   }
   .pageText a {
@@ -650,10 +661,26 @@ footer a, footer p {
   }
 }
 /* animations */
-.header1{
-  
-  visibility:hidden;
+.header1 {
+  visibility: hidden;
+  vertical-align: top;
 }
+.type div {
+  display: inline;
+}
+.inline {
+  display: grid;
+  grid-template-columns: 90px auto;
+}
+.inline p {
+  margin-bottom: auto;
+  margin-top: auto;
+  padding-right: 10px;
+  font-size: 50px;
+}
+/* .singleText .rotator .first {
+  display: inherit;
+} */
 /* slide ins */
 /* keyframes */
 @-webkit-keyframes slide {
