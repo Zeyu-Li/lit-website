@@ -4,7 +4,7 @@ import { AiFillHome } from 'react-icons/ai'
 import gsap from 'gsap'
 
 import { ReactComponent as PenguinCoin } from '../images/coin.svg'
-import { Navbar } from '../component/Component'
+import { Navbar } from '../component/Navbar'
 
 
 export const Secret: React.FC = React.memo(() => {

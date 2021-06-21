@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
 
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
-import { Navbar, Footer } from '../component/Component'
+import { Navbar } from '../component/Navbar'
+import { Footer } from '../component/Footer'
 import gsap from 'gsap'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 

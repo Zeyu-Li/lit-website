@@ -4,7 +4,7 @@ import { AiFillHome } from 'react-icons/ai'
 import gsap from 'gsap'
 
 import { ReactComponent as PiratePenguin } from '../images/pirate.svg'
-import { Navbar } from '../component/Component';
+import { Navbar } from '../component/Navbar'
 
 export const PageNotFound: React.FC = React.memo(() => {
     const history = useHistory()
