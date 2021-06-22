@@ -1,6 +1,6 @@
 # 🔥 Website
 
-[![preview](public/preview.png)](https://website-zeyu-li.vercel.app/)
+[![preview](public/preview.png)](https://andrewli.site/)
 
 <!--- Figma: https://www.figma.com/file/mkZXmrdOTVMlf9WKscBTjd/Portfolio-Website --->
 
@@ -10,7 +10,7 @@
 
 ---
 
-My personal portfolio website using Typescript-React
+My personal portfolio website using Typescript-React - Live now @ [andrewli.site](https://andrewli.site/)
 
 **🚧 Mostly done but may contain bugs** (🐛 bug report [here](https://github.com/Zeyu-Li/lit-website/issues))
 
