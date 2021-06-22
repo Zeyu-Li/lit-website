@@ -18,7 +18,7 @@ export const Model = ({scroll, small}) => {
 
     return (
         <group ref={group} dispose={null} scale={small}>
-        <group rotation={[0.21, 0, 0]} scale={[0.78, 1.13, 0.33]}>
+        <group scale={[0.78, 1.13, 0.33]} rotation={[0.21, 0, 0]} >
             <mesh
             castShadow
             receiveShadow
@@ -47,12 +47,6 @@ export const Model = ({scroll, small}) => {
             castShadow
             receiveShadow
             geometry={nodes.Sphere021_4.geometry}
-            material={materials['Clay.005']}
-            />
-            <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Sphere021_5.geometry}
             material={materials['Clay.006']}
             />
         </group>
