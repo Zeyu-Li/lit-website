@@ -23,7 +23,7 @@ export const Navbar: React.FC<Prop> = React.memo(({highlight = ''}) => {
                 <HashLink title="My Projects" to="/#projects" className={highlight === 'projects' ? "highlightedNav": ""}>Projects</HashLink>
                 <HashLink title="Contact Me" to="/#contact" className={highlight === 'contact' ? "highlightedNav": ""}>Contact</HashLink>
                 <HashLink title="View my resume" to="/resume" className={highlight === 'resume' ? "highlightedNav": ""}>Resume</HashLink>
-                <a title="View my blog" rel="noreferrer" target="_blank" href="https://andrew-li-blog.vercel.app/">Blog</a>
+                <a title="View my blog" rel="noreferrer" target="_blank" href="https://blog.andrewli.site/">Blog</a>
             </div>
             <div className="hamburger">
                 <HiMenu color="#73CDF3" size={30} title="Open Navigation Menu" onClick={clickedHamburger} />
@@ -35,7 +35,7 @@ export const Navbar: React.FC<Prop> = React.memo(({highlight = ''}) => {
                 <HashLink title="My Projects" to="/#projects" className={highlight === 'projects' ? "highlightedNav": ""}>Projects</HashLink><br />
                 <HashLink title="Contact Me" to="/#contact" className={highlight === 'contact' ? "highlightedNav": ""}>Contact</HashLink><br />
                 <HashLink title="View my resume" to="/resume" className={highlight === 'resume' ? "highlightedNav": ""}>Resume</HashLink><br />
-                <a title="View my blog" rel="noreferrer" target="_blank" href="https://andrew-li-blog.vercel.app/">Blog</a>
+                <a title="View my blog" rel="noreferrer" target="_blank" href="https://blog.andrewli.site/">Blog</a>
             </div>
         </div>
         </div>

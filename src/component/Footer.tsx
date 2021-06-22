@@ -19,7 +19,7 @@ export const Footer: React.FC<Prop> = React.memo(({highlight = ''}) => {
                     <HashLink title="Contact Me" to="/#contact" className={highlight === 'contact' ? "highlightedNav": ""}>Contact</HashLink>
                     <br id="footerBreak" />
                     <HashLink title="View my resume" to="/resume" className={highlight === 'resume' ? "highlightedNav": ""}>Resume</HashLink>
-                    <a title="View my blog" rel="noreferrer" target="_blank" href="https://andrew-li-blog.vercel.app/">Blog</a>
+                    <a title="View my blog" rel="noreferrer" target="_blank" href="https://blog.andrewli.site/">Blog</a>
                 </div>
             </footer>
         </>
