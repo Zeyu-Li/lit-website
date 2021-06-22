@@ -1,10 +1,8 @@
-import React, {useState, Suspense, lazy} from 'react'
+import React, {useState, useEffect, Suspense, lazy} from 'react'
 import { Canvas } from '@react-three/fiber'
 
-import { useEffect } from 'react'
 
-
-const Model = lazy(()=>import('./Model').then(mod => ({default: mod.Model})))
+const Model = lazy(()=>import('./Model'))
 
 export const Overlay: React.FC = React.memo(() => {
     const [blueSide, setBlueSide] = useState(window.innerWidth > 700)

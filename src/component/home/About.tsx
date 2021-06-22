@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { useIntersection } from 'react-use'
-import gsap from 'gsap'
+import {gsap} from 'gsap'
 
 import { Typing } from './Typing'
 
