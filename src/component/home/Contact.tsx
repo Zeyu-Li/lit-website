@@ -28,7 +28,7 @@ export const Contact: React.FC<Props> = React.memo(({highlight}) => {
         <div id="contact" className="contact" style={{position: "relative"}}>
             <div className="mainContact">
                 <h2>Contact</h2>
-                <a href="mailto:zeyu.li23@gmail.com" title="Email me"><span className="contactIcons"><IoMdMail size={iconSize} color="2EA2F8" /></span>zeyu.li23<wbr />@gmail.com</a><br/>
+                <a href="mailto:hello@andrewli.site" title="Email me"><span className="contactIcons"><IoMdMail size={iconSize} color="2EA2F8" /></span>hello@<wbr />andrewli.site</a><br/>
                 <a href="https://www.linkedin.com/in/andrew-li23/" title="Connect with me on LinkedIn"><span className="contactIcons"><AiFillLinkedin size={iconSize} color="2EA2F8" /></span>andrew-li23</a><br/>
                 <a href="https://github.com/Zeyu-Li" title="Check my GitHub"><span className="contactIcons"><VscGithub size={iconSize} color="2EA2F8" /></span>Zeyu-Li</a>
             </div>
