@@ -14,7 +14,7 @@ export const Skills: React.FC = React.memo(() => {
                 <h3>✨ Other Languages</h3>
                 <p>C++, C#, Java, Lua, LaTeX, Markdown, ShellScript</p>
                 <h3>📚 Libraries/<wbr />Frameworks</h3>
-                <p>React/React Native, Django, Flask, Express.js, Nest.js, </p>
+                <p>React/React Native, Django, Flask, Express.js, Nest.js, Electron.js</p>
                 <h3>🎮 Game</h3>
                 <p>Unity, Unreal</p>
                 <h3>🌟 Other</h3>
