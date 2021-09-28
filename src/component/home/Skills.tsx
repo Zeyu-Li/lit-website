@@ -10,15 +10,15 @@ export const Skills: React.FC = React.memo(() => {
                 <h3>🌺 Frontend</h3>
                 <p>JavaScript/<wbr />Typescript, HTML, CSS, WebAssembly</p>
                 <h3>💼 Backend</h3>
-                <p>Python (Django), JavaScript (Express.js), SQL, Firebase, C#, AWS</p>
+                <p>Python, JavaScript, SQL, AWS, Firebase, GCP</p>
                 <h3>✨ Other Languages</h3>
-                <p>C++, Java, Lua, LaTeX, Markdown, ShellScript</p>
+                <p>C++, C#, Java, Lua, LaTeX, Markdown, ShellScript</p>
                 <h3>📚 Libraries/<wbr />Frameworks</h3>
-                <p>Python (Django), JavaScript (Express.js), SQL, Firebase, C#, AWS</p>
+                <p>React/React Native, Django, Flask, Express.js, Nest.js, </p>
                 <h3>🎮 Game</h3>
                 <p>Unity, Unreal</p>
                 <h3>🌟 Other</h3>
-                <p>Figma, Git, GitHub, Blender, Adobe Illustrator</p>
+                <p>Figma, Git/<wbr/>GitHub, Blender, Adobe Illustrator</p>
                 <h3>📖 Learning</h3>
                 <p id="lastItem">TensorFlow, Haskell</p>
             </div>

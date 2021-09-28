@@ -39,7 +39,7 @@ export const About: React.FC = React.memo(() => {
                 <h2 className="header1" ref={header}>About Me</h2>
                 <h3 className="singleText type">I can code {active ? <Typing /> : ""}</h3>
                 <p>
-                    Currently a <b>Research Assistant</b> at the University of Alberta where I work as a <b>fullstack mobile dev</b>. I’m also studying computer science and very active on GitHub (over 130 repos/<wbr />projects). If you want to add me on your team or just want to chat, click on <HashLink to="/#contact" >Contact</HashLink>
+                    Currently a <b>Research Assistant</b> at the University of Alberta where I work as a <b>fullstack mobile dev</b>. I’m also studying computer science and very active on <a href="https://github.com/Zeyu-Li" title="My GitHub">GitHub</a> (over 140 repos/<wbr />projects). If you want to add me on your team or just want to chat, click on <HashLink to="/#contact" >Contact</HashLink>
                 </p>
             </div>
         </div>
