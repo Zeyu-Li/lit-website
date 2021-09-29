@@ -66,7 +66,7 @@ export const Projects: React.FC = React.memo(() => {
                 </div>
                 <div className="endOfProjects">
                     <p>
-                        Over 100 projects/repos on <a href="https://github.com/Zeyu-Li">GitHub</a>
+                        Over 140 projects/repos on <a href="https://github.com/Zeyu-Li">GitHub</a>
                     </p>
                 </div>
             </div>
