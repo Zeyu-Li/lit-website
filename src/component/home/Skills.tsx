@@ -8,7 +8,7 @@ export const Skills: React.FC = React.memo(() => {
             <div className="skills white">
                 <h2>Skills</h2>
                 <h3>🌺 Frontend</h3>
-                <p>JavaScript/<wbr />Typescript, HTML, CSS, WebAssembly</p>
+                <p>JavaScript/<wbr />Typescript, HTML, CSS/SCSS, WebAssembly</p>
                 <h3>💼 Backend</h3>
                 <p>Python, JavaScript, SQL, AWS, Firebase, GCP</p>
                 <h3>✨ Other Languages</h3>
