@@ -11,7 +11,7 @@ export const Footer: React.FC<Prop> = React.memo(({highlight = ''}) => {
     return (
         <>
             <footer>
-                <p className="copyrightText">© 2021 Andrew Li. <wbr />All Rights Reserved.</p>
+                <p className="copyrightText">© {new Date().getFullYear()} Andrew Li. <wbr />All Rights Reserved.</p>
                 <div className="breakLine" />
                 <div className="navFooterItems">
                     <HashLink title="Home" to="/#" className={highlight === 'home' ? "highlightedNav": ""}>Home</HashLink>
