@@ -7,7 +7,6 @@ interface Prop {
 }
 
 export const Footer: React.FC<Prop> = React.memo(({highlight = ''}) => {
-
     return (
         <>
             <footer>

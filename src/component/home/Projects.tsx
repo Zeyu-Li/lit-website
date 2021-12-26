@@ -6,6 +6,8 @@ import { FaGamepad } from 'react-icons/fa'
 
 
 export const Projects: React.FC = React.memo(() => {
+    const repoCount = 150;
+    // TODO: generate project component
 
     return (
         <>
@@ -66,7 +68,7 @@ export const Projects: React.FC = React.memo(() => {
                 </div>
                 <div className="endOfProjects">
                     <p>
-                        Over 140 projects/repos on <a href="https://github.com/Zeyu-Li">GitHub</a>
+                        Over {repoCount} projects/repos on <a href="https://github.com/Zeyu-Li">GitHub</a>
                     </p>
                 </div>
             </div>
