@@ -6,7 +6,7 @@ import { FaGamepad } from 'react-icons/fa'
 
 
 export const Projects: React.FC = React.memo(() => {
-    const repoCount = 150;
+    const repoCount = 150
     // TODO: generate project component
 
     return (
@@ -25,8 +25,8 @@ export const Projects: React.FC = React.memo(() => {
                         A realtime chat website
                         <br />{'>'} Using React, Firebase, JavaScript
                     </p>
-                    <a href="https://github.com/Zeyu-Li/chatter" title="Chatter repo link (GitHub)"><span className="contactIcons"><VscGithub size={32} color="2EA2F8" /></span>Source code</a><br />
-                    <a href="https://chatter-zeyu-li.vercel.app/" title="Chatter Project Demo"><span className="contactIcons"><MdWeb size={32} color="2EA2F8" /></span>Demo</a>
+                    <a href="https://github.com/Zeyu-Li/chatter" title="Chatter repo link (GitHub)" rel="noreferrer" target="_blank"><span className="contactIcons"><VscGithub size={32} color="2EA2F8" /></span>Source code</a><br />
+                    <a href="https://chatter-zeyu-li.vercel.app/" title="Chatter Project Demo" rel="noreferrer" target="_blank"><span className="contactIcons"><MdWeb size={32} color="2EA2F8" /></span>Demo</a>
                 </div>
                 <div className="singleProject">
                     <h4 style={{paddingBottom: 0}}>Lua Runner</h4>
@@ -34,8 +34,8 @@ export const Projects: React.FC = React.memo(() => {
                         A NPM Typescript module that runs Lua with over <b>1,800 downloads</b> 
                         <br />{'>'} Using TypeScript, Webassembly
                     </p>
-                    <a href="https://github.com/Zeyu-Li/lua-runner" title="Lua Runner source code"><span className="contactIcons"><VscGithub size={32} color="2EA2F8" /></span>Source code</a><br />
-                    <a href="https://www.npmjs.com/package/lua-runner" title="Check NPM page"><span className="contactIcons"><MdWeb size={32} color="2EA2F8" /></span>Demo</a>
+                    <a href="https://github.com/Zeyu-Li/lua-runner" title="Lua Runner source code" rel="noreferrer" target="_blank"><span className="contactIcons"><VscGithub size={32} color="2EA2F8" /></span>Source code</a><br />
+                    <a href="https://www.npmjs.com/package/lua-runner" title="Check NPM page" rel="noreferrer" target="_blank"><span className="contactIcons"><MdWeb size={32} color="2EA2F8" /></span>Demo</a>
                 </div>
                 <div className="singleProject">
                     <h4>Django Ecommerce</h4>
@@ -49,7 +49,7 @@ export const Projects: React.FC = React.memo(() => {
                         An ecommerce website build on Django and Bootstrap with login and shopping cart (connected to Stripe)
                         <br />{'>'} Using Python (Django), Stripe, JavaScript, CSS, HTML, Bootstrap
                     </p>
-                    <a href="https://github.com/Zeyu-Li/chatter" title="Django source code on GitHub"><span className="contactIcons"><VscGithub size={32} color="2EA2F8" /></span>Source code</a><br />
+                    <a href="https://github.com/Zeyu-Li/chatter" title="Django source code on GitHub" rel="noreferrer" target="_blank"><span className="contactIcons"><VscGithub size={32} color="2EA2F8" /></span>Source code</a><br />
                 </div>
                 <div className="singleProject" style={{paddingBottom: "5vh"}}>
                     <h4>Advanced Unity Tutorial</h4>
@@ -63,12 +63,12 @@ export const Projects: React.FC = React.memo(() => {
                         An Advanced Unity Tutorial, part of a larger Unity Tutorial series. Play demo is found below. 
                         <br />{'>'} Using C#, Blender, Adobe Illustator, Unity 
                     </p>
-                    <a href="https://github.com/Zeyu-Li/Unity-Advanced-3D-Tutorial" title="Unity Advanced Tutorial source code on GitHub"><span className="contactIcons"><VscGithub size={32} color="2EA2F8" /></span>Source code</a><br />
-                    <a href="https://andrewli.itch.io/unity-advanced-tutorial" title="Game demo"><span className="contactIcons"><FaGamepad size={32} color="2EA2F8" /></span>Demo</a><br />
+                    <a href="https://github.com/Zeyu-Li/Unity-Advanced-3D-Tutorial" title="Unity Advanced Tutorial source code on GitHub" rel="noreferrer" target="_blank"><span className="contactIcons"><VscGithub size={32} color="2EA2F8" /></span>Source code</a><br />
+                    <a href="https://andrewli.itch.io/unity-advanced-tutorial" title="Game demo" rel="noreferrer" target="_blank"><span className="contactIcons"><FaGamepad size={32} color="2EA2F8" /></span>Demo</a><br />
                 </div>
                 <div className="endOfProjects">
                     <p>
-                        Over {repoCount} projects/repos on <a href="https://github.com/Zeyu-Li">GitHub</a>
+                        Over {repoCount} projects/repos on <a href="https://github.com/Zeyu-Li" rel="noreferrer" target="_blank">GitHub</a>
                     </p>
                 </div>
             </div>
