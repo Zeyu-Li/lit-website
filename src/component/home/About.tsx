@@ -40,7 +40,7 @@ export const About: React.FC = React.memo(() => {
                 <h3 className="singleText type">I can code {active ? <Typing /> : ""}</h3>
                 <p>
                     Currently interning at Intuit and working at Zero RampUp as a <b>full stack dev</b>. 
-                    Formally a <b>research assistant</b> at the University of Alberta. 
+                    Formerly a <b>research assistant</b> at the University of Alberta. 
                     <wbr/> If you want to add me on your team or just want to chat, 
                     click on <HashLink to="/#contact" >Contact</HashLink>
                 </p>
