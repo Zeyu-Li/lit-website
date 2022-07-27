@@ -49,7 +49,7 @@ export const Intro: React.FC = React.memo(() => {
                         <h1> Andrew Li</h1>
                     </div>
                     <div className={`divider ${loaded ? "dividerLoaded" : ""}`} />
-                    <p className="singleText">Full Stack <wbr />and <wbr />Mobile Developer</p>
+                    <p className="singleText">Creative Software<wbr/> Developer</p>
                     </span>
                 </div>
             </div>
