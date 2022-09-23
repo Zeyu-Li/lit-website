@@ -44,8 +44,8 @@ export const About: React.FC = React.memo(() => {
                 </h2>
                 <h3 className="singleText type">I can code {active ? <Typing /> : ""}</h3>
                 <p>
-                    Currently interning at Intuit and working at Zero RampUp as a <b>project manager</b>. Formerly a{" "}
-                    <b>research assistant</b> at the University of Alberta.
+                    Working at Zero RampUp as a <b>project manager</b>. Formerly {" "}
+                    software intern at Intuit and <b>research assistant</b> at the University of Alberta.
                     <wbr /> If you want to add me on your team or just want to chat, click on{" "}
                     <HashLink to="/#contact">Contact</HashLink>
                 </p>
