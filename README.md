@@ -23,7 +23,6 @@ My personal portfolio website using Typescript-React - Live now @ [andrewli.site
 * react parallax
 * react pdf
 * react icons
-* react use
 * gsap
 
 ## Notice

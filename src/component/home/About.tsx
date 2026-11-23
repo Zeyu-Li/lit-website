@@ -1,19 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import { useIntersection } from "react-use";
 import { gsap } from "gsap";
 
 import { Typing } from "./Typing";
 
 export const About: React.FC = React.memo(() => {
-    const sectionRef = useRef(null);
-    const header = useRef(null);
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const header = useRef<HTMLHeadingElement>(null);
     const [active, setActive] = useState(false);
-    const intersection = useIntersection(sectionRef, {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5,
-    });
     const showAnimation = () => {
         setActive(true);
         // animation (fade in)
@@ -34,7 +28,20 @@ export const About: React.FC = React.memo(() => {
         );
     };
 
-    if (intersection && intersection.intersectionRatio > 0.5 && !active) showAnimation();
+    useEffect(() => {
+        const section = sectionRef.current;
+        if (!section || active) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.intersectionRatio <= 0.5) return;
+                observer.disconnect();
+                showAnimation();
+            },
+            { threshold: 0.5 }
+        );
+        observer.observe(section);
+        return () => observer.disconnect();
+    }, [active]);
 
     return (
         <div id="about" className="block white">

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
 import gsap from 'gsap'
 
-import { ReactComponent as PenguinCoin } from '../images/coin.svg'
+import PenguinCoin from '../images/coin.svg?react'
 import { Navbar } from '../component/Navbar'
 
 
@@ -13,7 +13,8 @@ export const Secret: React.FC = React.memo(() => {
     useEffect(() => {
         document.title = "Andrew's Portfolio | 😳"
         // animation (fade in)
-        gsap.from('.header1', 1,  {
+        gsap.from('.header1', {
+            duration: 1,
             autoAlpha: 0,
             rotationX: 80,
             transformOrigin: '50% 50% -40px',
