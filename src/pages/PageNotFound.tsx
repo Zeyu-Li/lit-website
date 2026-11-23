@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
 import gsap from 'gsap'
 
-import { ReactComponent as PiratePenguin } from '../images/pirate.svg'
+import PiratePenguin from '../images/pirate.svg?react'
 import { Navbar } from '../component/Navbar'
 
 export const PageNotFound: React.FC = React.memo(() => {
-    const history = useHistory()
+    const navigate = useNavigate()
     // sets title
     useEffect(() => {
         document.title = "Andrew's Portfolio | 404"
@@ -18,14 +18,15 @@ export const PageNotFound: React.FC = React.memo(() => {
         }
         if (eyepatchPath) {
             eyepatchPath.onclick = () => {
-                history.push('/secretsauce')
+                navigate('/secretsauce')
             }
         }
-    }, [history])
+    }, [navigate])
     useEffect(()=> {
         // on mount -> animation
         
-        gsap.from('.header1', 1, {
+        gsap.from('.header1', {
+            duration: 1,
             autoAlpha: 0,
             rotationX: 80,
             transformOrigin: '50% 50% -30px',

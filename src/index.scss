@@ -454,6 +454,10 @@ a {
 .annotationLayer {
     pointer-events: auto !important;
 }
+/* react-pdf paints the page white; keep that to the page's own width */
+.react-pdf__Page {
+    width: fit-content;
+}
 /* end of other pages */
 
 /* footer */

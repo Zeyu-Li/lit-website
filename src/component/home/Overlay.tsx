@@ -63,7 +63,8 @@ export const Overlay: React.FC = React.memo(() => {
                 <Suspense fallback={null}>
                     <Model scroll={offset} small={small} />
                 </Suspense>
-                <ambientLight intensity={1} />
+                {/* three.js r155+ dropped the legacy PI light scaling, so PI keeps the original brightness */}
+                <ambientLight intensity={Math.PI} />
             </Canvas>
             {blueSide ? <div className="blueSide"></div> : null}
         </div>
